@@ -56,9 +56,7 @@ app.get("/", (req, res) => {
   <meta name="theme-color" content="#173b2b">
   <title>Rusty Bite — Vegan Menu</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -104,9 +102,7 @@ app.get("/", (req, res) => {
       font-weight: bold;
     }
 
-    section {
-      margin: 34px 0;
-    }
+    section { margin: 34px 0; }
 
     h2 {
       color: #e8c875;
@@ -136,9 +132,7 @@ app.get("/", (req, res) => {
       gap: 12px;
     }
 
-    .row strong:first-child {
-      color: #fff9e9;
-    }
+    .row strong:first-child { color: #fff9e9; }
 
     .row strong:last-child {
       color: #e8c875;
@@ -151,17 +145,9 @@ app.get("/", (req, res) => {
     }
 
     @media (max-width: 480px) {
-      header {
-        padding: 38px 14px 32px;
-      }
-
-      main {
-        padding: 0 14px;
-      }
-
-      article {
-        padding: 15px;
-      }
+      header { padding: 38px 14px 32px; }
+      main { padding: 0 14px; }
+      article { padding: 15px; }
     }
   </style>
 </head>
@@ -180,5 +166,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(\`Server running at http://localhost:\${PORT}\`);
+  console.log(`Server running at http://localhost:${PORT}`);
 });
